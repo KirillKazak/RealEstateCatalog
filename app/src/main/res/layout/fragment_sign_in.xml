@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.authorization.SignInFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_15_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_30_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_60_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"/>
+
+    <TextView
+        android:id="@+id/tv_title_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/text_size_extra_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_hor_15_sign_in"/>
+
+    <EditText
+        android:id="@+id/edt_email_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edt_background"
+        android:background="@drawable/background_edt"
+        android:hint="@string/email"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="@dimen/text_size_regular"
+        android:textColorHint="@color/color_hint"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:lines="1"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="@dimen/margin_extra_large"
+        app:layout_constraintTop_toBottomOf="@id/gl_hor_30_sign_in"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/edt_password_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edt_background"
+        android:background="@drawable/background_edt"
+        android:hint="@string/password"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="@dimen/text_size_regular"
+        android:textColorHint="@color/color_hint"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:lines="1"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginHorizontal="@dimen/margin_extra_large"
+        app:layout_constraintTop_toBottomOf="@id/edt_email_sign_in"
+        tools:ignore="Autofill" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn_authorization"
+        android:background="@drawable/background_btn_authorization"
+        android:text="@string/sign_in_title"
+        android:textSize="@dimen/text_size_medium"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="@dimen/margin_extra_large"
+        app:layout_constraintTop_toBottomOf="@id/gl_hor_60_sign_in"/>
+
+    <TextView
+        android:id="@+id/tv_already_have_an_account_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/already_have_an_account"
+        android:textAlignment="center"
+        android:textColor="@color/color_hint"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="@id/btn_sign_in"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_in"/>
+
+    <TextView
+        android:id="@+id/tv_log_in_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_btn_sign_in_with"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/log_in"
+        android:textAlignment="center"
+        android:textColor="@color/color_tv_authorization"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        app:layout_constraintStart_toEndOf="@id/tv_already_have_an_account_sign_in"
+        app:layout_constraintTop_toBottomOf="@id/btn_sign_in"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

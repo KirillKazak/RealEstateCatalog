@@ -1,7 +1,8 @@
-package com.kazak.kirill.realestatecatalog
+package com.kazak.kirill.realestatecatalog.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.kazak.kirill.realestatecatalog.R
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "159512009740",
+    "project_id": "realestatecatalog-14ad9",
+    "storage_bucket": "realestatecatalog-14ad9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159512009740:android:33ce1008572ddfdb7a2229",
+        "android_client_info": {
+          "package_name": "com.kazak.kirill.realestatecatalog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159512009740-cemp56ritdhuqitt6vcuiuaq3kbdeijp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw6wZBxFsGOi4kaXi7KF_LJL3cPpby7qo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159512009740-cemp56ritdhuqitt6vcuiuaq3kbdeijp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

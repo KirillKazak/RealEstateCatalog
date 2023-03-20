@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.authorization.LogInFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_15_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_30_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_60_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"/>
+
+    <TextView
+        android:id="@+id/tv_title_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/text_size_extra_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_hor_15_log_in"/>
+
+    <EditText
+        android:id="@+id/edt_email_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edt_background"
+        android:background="@drawable/background_edt"
+        android:hint="@string/email"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="@dimen/text_size_regular"
+        android:textColorHint="@color/color_hint"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:lines="1"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="@dimen/margin_extra_large"
+        android:layout_marginTop="@dimen/margin_large"
+        app:layout_constraintTop_toBottomOf="@id/gl_hor_30_log_in"
+        app:layout_constraintBottom_toTopOf="@id/edt_password_log_in"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/edt_password_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_edt_background"
+        android:background="@drawable/background_edt"
+        android:hint="@string/password"
+        android:fontFamily="@font/montserrat_medium"
+        android:textSize="@dimen/text_size_regular"
+        android:textColorHint="@color/color_hint"
+        android:textAlignment="center"
+        android:maxLength="30"
+        android:lines="1"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_marginHorizontal="@dimen/margin_extra_large"
+        android:layout_marginTop="@dimen/margin_large"
+        app:layout_constraintTop_toBottomOf="@id/edt_email_log_in"
+        tools:ignore="Autofill" />
+
+    <ImageView
+        android:id="@+id/iv_password_visibility"
+        android:layout_width="@dimen/size_password_visibility"
+        android:layout_height="@dimen/size_password_visibility"
+        android:background="@drawable/icon_password_visibility_off"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:layout_constraintTop_toTopOf="@id/edt_password_log_in"
+        app:layout_constraintBottom_toBottomOf="@id/edt_password_log_in"
+        app:layout_constraintEnd_toEndOf="@id/edt_password_log_in"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_log_in"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_btn_authorization"
+        android:background="@drawable/background_btn_authorization"
+        android:text="@string/log_in"
+        android:textSize="@dimen/text_size_medium"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="@dimen/margin_extra_large"
+        app:layout_constraintTop_toBottomOf="@id/gl_hor_60_log_in"/>
+
+    <TextView
+        android:id="@+id/tv_have_not_an_account_log_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/have_not_an_account"
+        android:textAlignment="center"
+        android:textColor="@color/color_hint"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="@id/btn_log_in"
+        app:layout_constraintTop_toBottomOf="@id/btn_log_in"/>
+
+    <TextView
+        android:id="@+id/tv_sign_in_from_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_btn_sign_in_with"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/sign_in_title"
+        android:textAlignment="center"
+        android:textColor="@color/color_tv_authorization"
+        android:fontFamily="@font/montserrat_semi_bold"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginStart="@dimen/margin_small"
+        app:layout_constraintStart_toEndOf="@id/tv_have_not_an_account_log_in"
+        app:layout_constraintTop_toBottomOf="@id/btn_log_in"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

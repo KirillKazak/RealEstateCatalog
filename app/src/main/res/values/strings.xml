@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RealEstateCatalog</string>
+    <string name="sign_in_title">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+    <string name="log_in_title">Welcome back</string>
+    <string name="have_not_an_account">Have not an account</string>
 </resources>
